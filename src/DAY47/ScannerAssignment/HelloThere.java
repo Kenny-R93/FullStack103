@@ -1,4 +1,4 @@
-package DAY47;
+package DAY47.ScannerAssignment;
 
 import java.util.Scanner;
 
