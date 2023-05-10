@@ -1,4 +1,4 @@
-package DAY47;
+package DAY47.ConditionalStatementsPractice;
 
 import java.util.Scanner;
 
