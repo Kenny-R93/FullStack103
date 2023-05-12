@@ -19,8 +19,17 @@ public class Main {
         account1.accDetails();
         account2.accDetails();
 
+        // Product Assignment
+
+        Product proteinPowder = new Product(4, 10,"proteinPowder");
+
+        proteinPowder.printProduct();
+        proteinPowder.totalCost();
+
+
 
 
     }
 }
+
 
