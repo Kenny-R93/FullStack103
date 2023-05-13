@@ -1,5 +1,5 @@
-package DAY49;
-// Product Assignment
+package DAY50.BanksAccountContinued;
+
 public class Product {
     private double productCost;
 

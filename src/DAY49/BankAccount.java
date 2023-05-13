@@ -2,15 +2,18 @@ package DAY49;
 
 public class BankAccount {
 
+    // Two attributes
     private double bankAccountBalance;
 
     private String accountHolderName;
 
+    // Constructor
     public BankAccount(double bankAccountBalance, String accountHolderName) {
         this.bankAccountBalance = bankAccountBalance;
         this.accountHolderName = accountHolderName;
     }
 
+    // 3 Methods
     public void deposit(double amount) {
         bankAccountBalance = bankAccountBalance + amount;
 
