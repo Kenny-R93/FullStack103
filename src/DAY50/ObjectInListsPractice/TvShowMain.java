@@ -31,7 +31,7 @@ public class TvShowMain {
 
         }
 
-        for(TvShow tvShow: tvShow) {
+        for(TvShow tvShow: TvShow) {
             System.out.println(tvShow.toString());
         }
     }
