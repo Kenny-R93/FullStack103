@@ -1,5 +1,6 @@
 package DAY50.ObjectInListsPractice;
 
+import java.util.Enumeration;
 import java.util.Scanner;
 
 import java.util.ArrayList;
@@ -19,9 +20,17 @@ public class BookMain {
 
             }
 
+            System.out.println("How many pages are in the book?");
+            int numPages = scanner.nextInt();
+            scanner.nextLine();
+
             System.out.println("Publication year?");
             int publicationYear = scanner.nextInt();
             scanner.nextLine();
+
+
+            Book newbook = new Book(title, publicationYear, numPages);
+            bookList.add(newbook);
 
         }
 
@@ -29,14 +38,14 @@ public class BookMain {
         String printInput = scanner.nextLine();
 
         if( printInput.equals("title")) {
-            for (Book book: bookList) {
-                if(book != null) {
-                    System.out.println(book.getTitle());
+            for (Book newbook: bookList) {
+                if(newbook != null) {
+                    System.out.println(newbook.getTitle());
 
                 } else if (printInput.equals("everything")) {
-                    for (Book book: bookList) {
-                        if(book != null){
-                            System.out.println(book.toString());
+                    for (Book newBook: bookList) {
+                        if(newbook != null){
+                            System.out.println(newbook.toString());
                         }
                     }
                 }

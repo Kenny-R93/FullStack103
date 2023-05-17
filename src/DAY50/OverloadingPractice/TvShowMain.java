@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TvShowMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<TVShows> enterTVshows = new ArrayList<>();
+        ArrayList<TvShow> enterTVshows = new ArrayList<>();
 
         while (true) {
             System.out.println("Name of the show: ");
@@ -23,11 +23,11 @@ public class TvShowMain {
             System.out.println("What is the genre? ");
             String genre = scanner.nextLine();
 
-            enterTVshows.add(new TVShows(showName, numberOfEpisodes, genre));
+            enterTVshows.add(new TvShow(showName, numberOfEpisodes, genre));
 
         }
 
-        for (TVShows omg : enterTVshows) {
+        for (TvShow omg : enterTVshows) {
             System.out.println(omg);
         }
     }

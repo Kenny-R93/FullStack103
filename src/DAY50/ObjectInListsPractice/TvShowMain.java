@@ -26,13 +26,13 @@ public class TvShowMain {
             System.out.println("What is the genre?");
             String genre = scanner.nextLine();
 
-            TvShow tvShow = new TvShow(showName, numberEpisodes, genre);
-            tvShowList.add(tvShow);
+            TvShow newTvShow = new TvShow(showName, numberEpisodes, genre);
+            tvShowList.add(newTvShow);
 
         }
 
-        for(TvShow tvShow: TvShow) {
-            System.out.println(tvShow.toString());
+        for(TvShow newTvShow: tvShowList) {
+            System.out.println(newTvShow.toString());
         }
     }
 }
