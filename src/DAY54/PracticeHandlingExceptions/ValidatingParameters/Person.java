@@ -1,4 +1,4 @@
-package DAY54;
+package DAY54.PracticeHandlingExceptions.ValidatingParameters;
 
 
 public class Person {
