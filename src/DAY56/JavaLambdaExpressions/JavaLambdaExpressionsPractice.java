@@ -1,7 +1,5 @@
 package DAY56.JavaLambdaExpressions;
 
-import java.util.function.*;
-
 import java.util.function.BinaryOperator;
 
 import java.util.function.Predicate;
@@ -13,7 +11,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 
-public class Task1SimpleLambdaExpressions {
+public class JavaLambdaExpressionsPractice {
 
     public static <MyFunctionalInterface> void main(String[] args) {
 
