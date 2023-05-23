@@ -65,7 +65,7 @@ public class JavaLambdaExpressionsPractice {
         System.out.println(toUpperCase.apply(greeting));
 
         // Consumer
-        Consumer<String> message = ("Don't Give Up") -> {
+        Consumer<String> message = (DontGiveUp) -> {
             System.out.println("Don't Give Up");
             System.out.println("Don't Give Up");
         };
