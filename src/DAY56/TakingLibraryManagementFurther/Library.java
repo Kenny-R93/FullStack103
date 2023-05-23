@@ -124,9 +124,9 @@ public class Library {
 
         Library library = new Library();
 
-        Book book1 = new Book("1 First Book", "HectorG", 2023, 200, "Fiction");
-        Book book2 = new Book("2 Second Book", "HectorG", 2022, 300, "NonFiction");
-        Book book3 = new Book("3 Third Book", "HectorG", 2021, 750, "History");
+        Book book1 = new Book("1 First Book", "Hector G", 2023, 200, "Fiction");
+        Book book2 = new Book("2 Second Book", "Hector G", 2022, 300, "NonFiction");
+        Book book3 = new Book("3 Third Book", "Hector G", 2021, 750, "History");
 
         // Add books to the library set
         library.addBook(book1);

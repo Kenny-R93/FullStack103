@@ -18,6 +18,12 @@ public class Book {
         this.isOnLoan = false;
     }
 
+    public Book() {
+    }
+
+    public Book(String s, String hectorG, int i, int i1, String history) {
+    }
+
     // Getters and Setters
 
     public String getTitle() {
