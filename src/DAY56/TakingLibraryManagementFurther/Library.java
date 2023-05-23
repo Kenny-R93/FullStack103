@@ -18,15 +18,6 @@ import java.util.stream.Collectors;
 
 import java.util.Comparator;
 
-import java.util.function.*; // predicate, function, consumer, supplier
-
-import java.util.stream.Collectors; // collections (collect(collector)
-
-import java.util.List; // lists
-
-import java.util.ArrayList;
-
-import java.util.Comparator;
 
 
 public class Library {
@@ -133,9 +124,9 @@ public class Library {
 
         Library library = new Library();
 
-        Book book1 = new Book("1 First Book", "Hector G", 2023, 200, "Fiction");
-        Book book2 = new Book("2 Second Book", "Hector G", 2022, 300, "NonFiction");
-        Book book3 = new Book("3 Third Book", "Hector G", 2021, 750, "History");
+        Book book1 = new Book("1 First Book", "HectorG", 2023, 200, "Fiction");
+        Book book2 = new Book("2 Second Book", "HectorG", 2022, 300, "NonFiction");
+        Book book3 = new Book("3 Third Book", "HectorG", 2021, 750, "History");
 
         // Add books to the library set
         library.addBook(book1);
@@ -151,7 +142,7 @@ public class Library {
         System.out.println();
 
         // Find books by author
-        List<Book> booksByAuthor = library.findBooksByAuthor("books about debugging");
+        List<Book> booksByAuthor = library.findBooksByAuthor("Jeremy G");
         System.out.println("Books about debugging:");
         for (Book book : booksByAuthor) {
             library.printBookDetails.accept(book);
