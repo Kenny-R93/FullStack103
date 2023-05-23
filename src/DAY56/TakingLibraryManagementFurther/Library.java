@@ -161,7 +161,7 @@ public class Library {
         library.loanOutBook(book1);
 
         // Create a user
-        User user = new User("Hector The Best", "111");
+        User user = new User("HectorTheBest", "111");
 
         // User borrows a book
         user.borrowBook(book1);
