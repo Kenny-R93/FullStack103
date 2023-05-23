@@ -133,9 +133,9 @@ public class Library {
 
         Library library = new Library();
 
-        Book book1 = new Book("1 First Book", "Missy Sher", 2023, 200, "Fiction");
-        Book book2 = new Book("2 Second Book", "Missy Yang", 2022, 300, "NonFiction");
-        Book book3 = new Book("3 Third Book", "Missy Sherlay", 2021, 750, "History");
+        Book book1 = new Book("1 First Book", "Hector G", 2023, 200, "Fiction");
+        Book book2 = new Book("2 Second Book", "Hector G", 2022, 300, "NonFiction");
+        Book book3 = new Book("3 Third Book", "Hector G", 2021, 750, "History");
 
         // Add books to the library set
         library.addBook(book1);
@@ -151,8 +151,8 @@ public class Library {
         System.out.println();
 
         // Find books by author
-        List<Book> booksByAuthor = library.findBooksByAuthor("Missy Sher");
-        System.out.println("Books by Missy Sher:");
+        List<Book> booksByAuthor = library.findBooksByAuthor("books about debugging");
+        System.out.println("Books about debugging:");
         for (Book book : booksByAuthor) {
             library.printBookDetails.accept(book);
         }
@@ -161,7 +161,7 @@ public class Library {
         library.loanOutBook(book1);
 
         // Create a user
-        User user = new User("Hectoria", "111");
+        User user = new User("Hector The Best", "111");
 
         // User borrows a book
         user.borrowBook(book1);
