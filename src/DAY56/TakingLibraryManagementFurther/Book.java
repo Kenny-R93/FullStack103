@@ -1,32 +1,46 @@
 package DAY56.TakingLibraryManagementFurther;
 
 public class Book {
-    private String name;
-    private String content;
+    private String title;
+    private String author;
     private int published;
-
     private int pages;
+    private String category;
+    private boolean available;
+    private boolean isOnLoan;
 
-    public Book(String name, int published, int pages, String content) {
-        this.name = name;
+    public Book(String title, int published, int pages, String content) {
+        this.title = title;
         this.published = published;
         this.pages = pages;
-        this.content = content;
+        this.category = category;
+        this.available = true;
+        this.isOnLoan = false;
     }
 
-    public String getName() {
-        return this.name;
+    // Getters and Setters
+
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public int getPublished() {
-        return this.published;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setPublished(int published) {
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getPublicationYear() {
+        return published;
+    }
+
+    public void setPublicationYear(int published) {
         this.published = published;
     }
 
@@ -38,17 +52,27 @@ public class Book {
         this.pages = pages;
     }
 
-    public String getContent() {
-        return this.content;
+    public String getCategory() {
+        return category;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
-    public String toString() {
-        return "Name: " + this.name + " (" + this.published + ")\n"
-                + "Content: " + this.content;
+    public boolean getAvailable() {
+        return available;
     }
 
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+    public boolean isOnLoan() {
+        return isOnLoan;
+    }
+
+    public void setLoanStatus(boolean isOnLoan) {
+        this.isOnLoan = isOnLoan;
+    }
 }
