@@ -116,4 +116,4 @@ public class SharedBuffer { // 2. Define a SharedBuffer class to handle the shar
 
 
     // HELLA confused why the logic steps were written with the producer class being last. My logic was more of like a supply chain belt in the kitchen where a producer task would be first then a consumer task run concurrently after.
-    // Broke it while trying to test it. Need to change infinite loop to for loop to test with a limited # iteration. IDK why I can't run it. BUT I TRIED
+    // Broke it while trying to test it. Need to change infinite loop to for loop to test with a limited # iteration. IDK why I can't run it, PROB NEED TO FIX MAIN METHOD. BUT I TRIED
